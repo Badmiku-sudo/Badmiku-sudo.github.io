@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petualangan Bintang Jatuh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌠 Petualangan Bintang Jatuh 🌠</h1>
+        <div class="animation-container">
+            <div class="star" style="top: 10%; left: 20%; animation-duration: 1.5s;"></div>
+            <div class="star" style="top: 30%; left: 40%; animation-duration: 2s;"></div>
+            <div class="star" style="top: 50%; left: 60%; animation-duration: 1s;"></div>
+            <div class="star" style="top: 70%; left: 80%; animation-duration: 2.5s;"></div>
+            <div class="star" style="top: 90%; left: 50%; animation-duration: 1.2s;"></div>
+        </div>
+        <button class="button" onclick="startAdventure()">Mulai Petualangan</button>
+
+        <div id="adventure" class="hidden">
+            <div class="dialog">
+                <h2>✨ Mulai Petualangan ✨</h2>
+                <p>Hai, [Fabiola],</p>
+                <p>Ayo kita lakukan petualangan romantis di bawah langit penuh bintang. Di malam yang indah ini, aku ingin berbagi momen spesial denganmu.</p>
+                <p>Aku punya satu pertanyaan penting...</p>
+                <button class="button" onclick="acceptAdventure()">Ayo, Mari Kita Mulai!</button>
+                <button class="button" onclick="declineAdventure()">Mungkin Lain Waktu</button>
+                <div id="response" class="hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
